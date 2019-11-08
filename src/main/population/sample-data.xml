@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- sample-data.xml
+-
+- Copyright (c) 2019 Rafael Corchuelo.
+-
+- In keeping with the traditional purpose of furthering education and research, it is
+- the policy of the copyright owner to permit non-commercial use and redistribution of
+- this software. It has been tested carefully, but it is not guaranteed for any particular
+- purposes.  The copyright owner does not offer any warranties or representations, nor do
+- they accept any liabilities with respect to them.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="conversion-service.xml" />
+	
+	<!--Investor Record-->
+	
+	<bean name="investorrecord01" class="acme.entities.investorrecords.InvestorRecord">
+		<property name="investor" value="Daniel García" />
+		<property name="sector" value="Tecnology" />
+		<property name="statement" value="This is a example" />
+		<property name="star" value="5" />
+	</bean>
+	
+	<bean name="investorrecord02" class="acme.entities.investorrecords.InvestorRecord">
+		<property name="investor" value="Alberto Bache" />
+		<property name="sector" value="Example2" />
+		<property name="statement" value="This is a 2nd example" />
+		<property name="star" value="1" />
+	</bean>
+	
+	<bean name="investorrecord03" class="acme.entities.investorrecords.InvestorRecord">
+		<property name="investor" value="Antonio Lavadero" />
+		<property name="sector" value="Example3" />
+		<property name="statement" value="This is a 3rd example" />
+		<property name="star" value="2" />
+	</bean>
+ 
+ 	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 01" />
+		<property name="moment" value="2019/11/01 10:35" />
+		<property name="moreInfo"><null/></property>
+		<property name="text" value="This is the description of a sample announcement" />
+	</bean>
+	
+	<bean id="announcement02" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 02" />
+		<property name="moment" value="2019/06/10 00:00" />
+		<property name="moreInfo" value="http://www.example.org" />
+		<property name="text" value="This is the description of a another announcement" />
+	</bean>
+	
+	<bean id="announcement03" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 03" />
+		<property name="moment" value="1900/10/10 19:10" />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="text" value="This is a very old announcement" />
+	</bean>
+	
+	<bean id="announcement04" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 04" />
+		<property name="moment" value="2019/10/25 19:10" />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="text" value="This is a very old announcement" />
+	</bean>
+	
+	<bean id="announcement05" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 05" />
+		<property name="moment" value="2019/09/29 19:10" />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="text" value="This is a very old announcement" />
+	</bean>
+
+
+<bean id = "offer01" class = "acme.entities.offers.Offer">
+<property name= "title" value= "Offer1"/>
+<property name= "text" value= "Viva mi beti 2.0"/>
+<property name= "moment" value= "2019/09/09 10:00"/>
+<property name= "deadline" value= "2039/09/09 10:00"/>
+<property name= "ticker" value= "OABCD-00001"/>
+<property name= "rewardMax" value= "1300.0€"/>
+<property name= "rewardMin" value= "850.0€"/>
+</bean>
+
+<bean id = "offer02" class = "acme.entities.offers.Offer">
+<property name= "title" value= "Offer2"/>
+<property name= "text" value= "Viva mi beti 2.0"/>
+<property name= "moment" value= "2019/09/09 10:00"/>
+<property name= "deadline" value= "2039/09/09 10:00"/>
+<property name= "ticker" value= "OABCD-00002"/>
+<property name= "rewardMax" value= "1000.0€"/>
+<property name= "rewardMin" value= "750.0€"/>
+
+</bean>
+
+<bean id = "offer03" class = "acme.entities.offers.Offer">
+<property name= "title" value= "Offer3"/>
+<property name= "text" value= "Viva mi beti 3.0"/>
+<property name= "moment" value= "2019/09/09 10:00"/>
+<property name= "deadline" value= "2018/08/08 10:00"/>
+<property name= "ticker" value= "OABCD-00003"/>
+<property name= "rewardMax" value= "1500.0€"/>
+<property name= "rewardMin" value= "1050.0€"/>
+</bean>
+
+<bean id = "request01" class = "acme.entities.requests.Request">
+<property name= "title" value= "Request001"/>
+<property name= "text" value= "Viva mi beti"/>
+<property name= "moment" value= "2019/09/09 10:00"/>
+<property name= "deadline" value= "2019/09/09 10:00"/>
+<property name= "ticker" value= "RABCD-00001"/>
+<property name= "reward" value= "500.0€"/>
+
+
+
+</bean>
+
+<bean id = "request02" class = "acme.entities.requests.Request">
+<property name= "title" value= "Request002"/>
+<property name= "text" value= "Viva mi beti 2.0"/>
+<property name= "moment" value= "2019/09/09 10:00"/>
+<property name= "deadline" value= "2039/09/09 10:00"/>
+<property name= "ticker" value= "RABCD-00002"/>
+<property name= "reward" value= "500.0€"/>
+</bean>
+
+
+
+
+	<bean id="companyrecord01" class="acme.entities.companyrecords.CompanyRecord">
+		<property name="name" value="Nintendo" />
+		<property name="sector" value="VideoGames" />
+		<property name="ceo" value="Daniel" />
+		<property name="description" value="This is a videogame company" />
+		<property name="webSite" value="https://www.nintendo.es" />
+		<property name="phone" value="+1 (5123) 456127" />
+		<property name ="email" value="gmail@hotmail.es" />
+		<property name="indication" value="true" />
+		<property name="star" value="5"/>
+	</bean>
+
+	<bean id="companyrecord02" class="acme.entities.companyrecords.CompanyRecord">
+		<property name="name" value="Sony" />
+		<property name="sector" value="VideoGames" />
+		<property name="ceo" value="Julián" />
+		<property name="description" value="Example 2" />
+		<property name="webSite" value="https://www.example.es" />
+		<property name="phone" value="+361 (5123) 456127" />
+		<property name ="email" value="jeje@gmail.com" />
+		<property name="indication" value="false" />
+		<property name="star" value="3"/>
+
+	</bean>
+	
+	<bean id ="challenge01" class="acme.entities.challenges.Challenge">
+	<property name="title" value="titulo1"></property> 
+	<property name="description" value="description1"></property> 
+	<property name="moment" value="2020/02/25 00:00"></property> 
+	<property name="goldReward" value="1500.0€"></property> 
+	<property name="silverReward" value="1500.0€"></property> 
+	<property name="bronzeReward" value="1500.0€"></property> 
+	<property name="goldGoal" value="valorgO"></property> 
+	<property name="silverGoal" value="valorgP"></property> 
+	<property name="bronzeGoal" value="valorgB"></property> 
+	</bean>
+		<bean id="configuration01" class="acme.entities.configurations.Configuration">
+		<property name="spamWords" value=" viagra, sex, 
+			cialis, hard_core, cialis, nigeria, you’ve won, million dollar, 
+				millon de dolares, has ganado, explícito, sexo"></property>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
+	
+
+	<bean id="comercialbanner01" class="acme.entities.comercialbanners.ComercialBanner">
+		<property name="picture" value="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/1200px-Coca-Cola_logo.svg.png" />
+		<property name="slogan" value="Siente el sabor" />
+		<property name="targetUrl" value="https://www.cocacola.es/es/home/" />
+		<property name="creditCard" value="4679489831381972" />
+	</bean>
+	
+	<bean id="noncomercialbanner01" class="acme.entities.noncomercialbanners.NonComercialBanner">
+		<property name="picture" value="https://www.mercadona.es/web-display-img.png" />
+		<property name="slogan" value="Algo más que palabras" />
+		<property name="targetUrl" value="https://www.mercadona.es" />
+		<property name="jingle" value="https://www.youtube.com/watch?v=ytT6355sDr4" />
+	</bean>
+	
+</beans>
+
