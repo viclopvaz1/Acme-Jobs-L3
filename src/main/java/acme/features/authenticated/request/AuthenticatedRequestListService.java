@@ -1,7 +1,9 @@
 
 package acme.features.authenticated.request;
 
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -36,7 +38,11 @@ public class AuthenticatedRequestListService implements AbstractListService<Auth
 	public Collection<acme.entities.requests.Request> findMany(final acme.framework.components.Request<acme.entities.requests.Request> request) {
 		assert request != null;
 		Collection<Request> result;
-		result = this.repository.findMany();
+		Calendar cal = Calendar.getInstance();
+		Date moment = cal.getTime();
+		int mes = moment.getMonth();
+		moment.setMonth(mes - 1);
+		result = this.repository.findManyByMoment(moment);
 
 		return result;
 	}

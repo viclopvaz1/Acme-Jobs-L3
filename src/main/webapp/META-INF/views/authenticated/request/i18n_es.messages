@@ -25,4 +25,5 @@ authenticated.request.form.label.ticker = Identificador
 authenticated.request.form.label.moment = Fecha
 authenticated.request.form.label.deadline = Fecha vencimiento
 
+authenticated.request.form.button.create = Crear
 authenticated.request.form.button.return = Volver

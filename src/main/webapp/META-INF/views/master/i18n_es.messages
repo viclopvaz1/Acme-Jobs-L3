@@ -66,6 +66,7 @@ master.menu.administrator.list-announcement = Lista de todos anuncios
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
+master.menu.provider.create-request = Crear Solicitud
 master.menu.provider.favourite-link = Enlace favorito
 master.menu.provider.favourite-linkJ = Enlace de Josruialb
 master.menu.provider.favourite-linkV = Enlace de Viclopvaz1
@@ -76,6 +77,7 @@ master.menu.provider.favourite-linkAC = Enlace de Antcorlav
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumidor
+master.menu.consumer.create-offer = Crear Offerta
 master.menu.consumer.favourite-link = Enlace favorito
 master.menu.consumer.favourite-linkJ = Enlace de Josruialb
 master.menu.consumer.favourite-linkV = Enlace de Viclopvaz1

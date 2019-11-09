@@ -2,67 +2,9 @@
 <diagram program="umlet" version="14.3.0">
   <zoom_level>7</zoom_level>
   <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>588</x>
-      <y>168</y>
-      <w>168</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-UserRole
---
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
-      <x>609</x>
-      <y>203</y>
-      <w>70</w>
-      <h>77</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>80.0;10.0;10.0;90.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>238</x>
-      <y>98</y>
-      <w>154</w>
-      <h>84</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Datatype&gt;&gt;
-UserIdentity
---
-+ name: String {NotBlank}
-+ surname: String {♫NotBlank}
-+ email: String {NotBlank, Email}
-+ / fullName: String {NotBlank}
-
-bg=orange
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>238</x>
-      <y>35</y>
-      <w>168</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>The full name catenates the 
-surname, a comma, and the name.
-bg=blue</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>308</x>
+      <x>518</x>
       <y>70</y>
       <w>21</w>
       <h>42</h>
@@ -72,199 +14,10 @@ bg=blue</panel_attributes>
     <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>658</x>
-      <y>203</y>
-      <w>70</w>
-      <h>77</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;80.0;90.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>833</x>
-      <y>175</y>
-      <w>70</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Role&gt;&gt;
-Administrator
---
-
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>833</x>
-      <y>119</y>
-      <w>70</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Role&gt;&gt;
-Anonymous
---
-
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>833</x>
-      <y>224</y>
-      <w>70</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Role&gt;&gt;
-Authenticated
---
-
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>749</x>
-      <y>147</y>
-      <w>98</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;60.0;120.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>749</x>
-      <y>182</y>
-      <w>98</w>
-      <h>21</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>749</x>
-      <y>182</y>
-      <w>98</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;120.0;70.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>238</x>
-      <y>196</y>
-      <w>154</w>
-      <h>49</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Enum&gt;&gt;
-CustomCommand
---
-
-
-bg=orange</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>511</x>
-      <y>266</y>
-      <w>140</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Role&gt;&gt;
-Provider
---
-+ company: String {NotBlank}
-+ sector: String {NotBlank}</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>672</x>
-      <y>266</y>
-      <w>147</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Role&gt;&gt;
-Consumer
---
-+ company: String {NotBlank}
-+ sector: String {NotBlank}</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>70</x>
-      <y>98</y>
-      <w>154</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Datatype&gt;&gt;
-Money
---
-+ amount: double {Digits(10, 2)}
-+ currentcy: String {NotBlank}
-
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>147</x>
-      <y>168</y>
-      <w>154</w>
-      <h>91</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Enum&gt;&gt;
-BasicCommand
---
-+ LIST
-+ SHOW
-+ CREATE
-+ UPDATE
-+ DELETE
-
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>70</x>
-      <y>273</y>
-      <w>154</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Enum&gt;&gt;
-HttpMethod
---
-+ GET
-+ POST
-
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>546</x>
-      <y>0</y>
+      <x>938</x>
+      <y>378</y>
       <w>238</w>
       <h>91</h>
     </coordinates>
@@ -283,57 +36,10 @@ UserAccount
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>665</x>
-      <y>84</y>
-      <w>49</w>
-      <h>98</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-&gt;
-m1=1
-m2=*
-has v</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>259</x>
-      <y>273</y>
-      <w>238</w>
-      <h>77</h>
-    </coordinates>
-    <panel_attributes>&lt;Entity&gt;
-InvestorRecord
---
-+investor {NotBlank}
-+sector {NotBlank}
-+statement {NotBlank}
-+starts {Range(min=1, max=5)}</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>315</x>
-      <y>357</y>
-      <w>154</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>AnonymousInvestorRecord
---
-+save(entity)
-+delete(entity)
---
-+findMany()</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>518</x>
-      <y>350</y>
+      <x>707</x>
+      <y>385</y>
       <w>217</w>
       <h>70</h>
     </coordinates>
@@ -349,18 +55,7 @@ Announcement
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>77</x>
-      <y>14</y>
-      <w>70</w>
-      <h>21</h>
-    </coordinates>
-    <panel_attributes>SimpleClass</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>287</x>
+      <x>497</x>
       <y>462</y>
       <w>259</w>
       <h>119</h>
@@ -382,25 +77,9 @@ Challenge
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>560</x>
-      <y>434</y>
-      <w>378</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Configuration
---
-+ spamWords: String (NotBlank)
-+ moment: Double (DecimalMin(value = "1.0"), DecimalMax(value = "100.0"))
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>42</x>
-      <y>350</y>
-      <w>224</w>
+      <x>476</x>
+      <y>294</y>
+      <w>259</w>
       <h>77</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
@@ -415,8 +94,8 @@ ComercialBanner
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>77</x>
-      <y>469</y>
+      <x>567</x>
+      <y>588</y>
       <w>168</w>
       <h>77</h>
     </coordinates>
@@ -432,8 +111,8 @@ NonComercialBanner
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>553</x>
-      <y>504</y>
+      <x>1498</x>
+      <y>371</y>
       <w>217</w>
       <h>119</h>
     </coordinates>
@@ -451,8 +130,8 @@ Request
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>784</x>
-      <y>504</y>
+      <x>1729</x>
+      <y>350</y>
       <w>252</w>
       <h>140</h>
     </coordinates>
@@ -472,8 +151,8 @@ Offer
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>77</x>
-      <y>560</y>
+      <x>385</x>
+      <y>595</y>
       <w>154</w>
       <h>91</h>
     </coordinates>
@@ -489,6 +168,951 @@ CompanyRecord
 + email: String(NotBlank ,email)
 + indication: Boolean
 + star: Integer (Range(min = 0, max = 5))</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1281</x>
+      <y>196</y>
+      <w>168</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+UserRole
+--
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1302</x>
+      <y>231</y>
+      <w>70</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>931</x>
+      <y>126</y>
+      <w>154</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Datatype&gt;&gt;
+UserIdentity
+--
++ name: String {NotBlank}
++ surname: String {♫NotBlank}
++ email: String {NotBlank, Email}
++ / fullName: String {NotBlank}
+
+bg=orange
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>931</x>
+      <y>63</y>
+      <w>168</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>The full name catenates the 
+surname, a comma, and the name.
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1001</x>
+      <y>98</y>
+      <w>21</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=..
+</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1351</x>
+      <y>231</y>
+      <w>70</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1526</x>
+      <y>203</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Administrator
+--
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1526</x>
+      <y>147</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Anonymous
+--
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1526</x>
+      <y>252</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Authenticated
+--
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1442</x>
+      <y>175</y>
+      <w>98</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1442</x>
+      <y>210</y>
+      <w>98</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1442</x>
+      <y>210</y>
+      <w>98</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>931</x>
+      <y>224</y>
+      <w>154</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+CustomCommand
+--
++STARS
+
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1204</x>
+      <y>294</y>
+      <w>140</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Provider
+--
++ company: String {NotBlank}
++ sector: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1365</x>
+      <y>294</y>
+      <w>147</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Consumer
+--
++ company: String {NotBlank}
++ sector: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>763</x>
+      <y>126</y>
+      <w>154</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Datatype&gt;&gt;
+Money
+--
++ amount: double {Digits(10, 2)}
++ currentcy: String {NotBlank}
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>763</x>
+      <y>196</y>
+      <w>154</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+BasicCommand
+--
++ LIST
++ SHOW
++ CREATE
++ UPDATE
++ DELETE
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>763</x>
+      <y>301</y>
+      <w>154</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+HttpMethod
+--
++ GET
++ POST
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1239</x>
+      <y>28</y>
+      <w>238</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+UserAccount
+--
++ username: String {Unique, NotBlank, Length(5, 60)}
++ password: String {NotBlank, Length(5, 60)}
++ enabled: boolean
++ identity: Identity {Valid}
++ / anonymous: boolean
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1358</x>
+      <y>112</y>
+      <w>49</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=1
+m2=*
+has v</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>980</x>
+      <y>294</y>
+      <w>189</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+InvestorRecord
+--
++investor {NotBlank}
++sector {NotBlank}
++statement {NotBlank}
++starts {Range(min=1, max=5)}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1764</x>
+      <y>259</y>
+      <w>217</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Announcement
+--
++ title: String (NotBlank)
++ moment: Date (Temporal(TIMESTAMP), Past)
++ moreInfo: String (URL)
++ text: String (NotBlank)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1722</x>
+      <y>112</y>
+      <w>259</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>Challenge
+--
++ title: String (NotBlank)
++ moment: Date (Temporal(TIMESTAMP), Future)
++ description: String (URL)
++ goldG: String (NotBlank)
++ silverG: String (NotBlank)
++ bronzeG: String (NotBlank)
++ goldR: String (NotBlank)
++ silverR: String (NotBlank)
++ bronzeR: String (NotBlank)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>763</x>
+      <y>476</y>
+      <w>420</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Configuration
+--
++ spamWords: Collection&lt;String&gt; (@ElementCollection(fetch = FetchType.EAGER))
++ moment: Double (@DecimalMin(value = "1.0"),@DecimalMax(value = "100.0"))
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1190</x>
+      <y>448</y>
+      <w>196</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Service&gt;&gt;
+AnonymousInvestorRecordController
+--
+-initialise(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>770</x>
+      <y>553</y>
+      <w>238</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+AnonymousInvestorRecordRepository
+--
++findMany(): Collections&lt;InvestorRecord&gt;
++findOneById(int id): InvestorRecord
++findManyStars(): Collections&lt;InvestorRecord&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1155</x>
+      <y>686</y>
+      <w>378</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+AnonymousInvestorRecordListService
+--
++authorise(r: Request&lt;InvestorRecord&gt;): boolean
++unbind(r: Request&lt;InvestorRecord&gt;, e InvestorRecord , m: Model):void
++findMany(r: Request&lt;InvestorRecord&gt;): Collections&lt;InvestorRecord&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>763</x>
+      <y>686</y>
+      <w>378</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+AnonymousInvestorRecordListTopsService
+--
++authorise(r: Request&lt;InvestorRecord&gt;): boolean
++unbind(r: Request&lt;InvestorRecord&gt;, e InvestorRecord , m: Model):void
++findMany(r: Request&lt;InvestorRecord&gt;): Collections&lt;InvestorRecord&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1099</x>
+      <y>553</y>
+      <w>378</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Service&gt;&gt;
+AnonymousInvestorRecordShowService
+--
++authorise(r: Request&lt;InvestorRecord&gt;): boolean
++unbind(r: Request&lt;InvestorRecord&gt;, e: InvestorRecord, m: Model): void
++findOne(r: Request&lt;InvestorRecord&gt;): InvestorRecord</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1281</x>
+      <y>490</y>
+      <w>35</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>938</x>
+      <y>609</y>
+      <w>350</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>480.0;110.0;480.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>854</x>
+      <y>609</y>
+      <w>35</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1001</x>
+      <y>574</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1596</x>
+      <y>518</y>
+      <w>238</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+AnonymousCompanyRecordRepository
+--
++findMany(): Collections&lt;CompanyRecord&gt;
++findOneById(int id): CompanyRecord
++findManyStars(): Collections&lt;CompanyRecord&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1883</x>
+      <y>518</y>
+      <w>385</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Service&gt;&gt;
+AnonymousCompanyRecordShowService
+--
++authorise(r: Request&lt;CompanyRecord&gt;): boolean
++unbind(r: Request&lt;CompanyRecord&gt;, e: CompanyRecord, m: Model): void
++findOne(r: Request&lt;CompanyRecord&gt;): CompanyRecord</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1967</x>
+      <y>623</y>
+      <w>378</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+AnonymousCompanyRecordListService
+--
++authorise(r: Request&lt;CompanyRecord&gt;): boolean
++unbind(r: Request&lt;CompanyRecord&gt;, e CompanyRecord , m: Model):void
++findMany(r: Request&lt;CompanyRecord&gt;): Collections&lt;CompanyRecord&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1575</x>
+      <y>623</y>
+      <w>378</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+AnonymousCompanyRecordListTopsService
+--
++authorise(r: Request&lt;CompanyRecord&gt;): boolean
++unbind(r: Request&lt;CompanyRecord&gt;, e CompanyRecord , m: Model):void
++findMany(r: Request&lt;CompanyRecord&gt;): Collections&lt;CompanyRecord&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2023</x>
+      <y>427</y>
+      <w>196</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Service&gt;&gt;
+AnonymousCompanyRecordController
+--
+-initialise(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2114</x>
+      <y>469</y>
+      <w>35</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1708</x>
+      <y>574</y>
+      <w>35</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1799</x>
+      <y>574</y>
+      <w>308</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>420.0;70.0;420.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1827</x>
+      <y>546</y>
+      <w>70</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>80.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2023</x>
+      <y>280</y>
+      <w>238</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+AuthenticatedCompanyRecordRepository
+--
++findMany(): Collections&lt;CompanyRecord&gt;
++findOneById(int id): CompanyRecord</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2282</x>
+      <y>343</y>
+      <w>385</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Service&gt;&gt;
+AuthenticatedCompanyRecordShowService
+--
++authorise(r: Request&lt;CompanyRecord&gt;): boolean
++unbind(r: Request&lt;CompanyRecord&gt;, e: CompanyRecord, m: Model): void
++findOne(r: Request&lt;CompanyRecord&gt;): CompanyRecord</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2149</x>
+      <y>336</y>
+      <w>147</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>190.0;70.0;10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2289</x>
+      <y>217</y>
+      <w>378</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+AuthenticatedCompanyRecordListService
+--
++authorise(r: Request&lt;CompanyRecord&gt;): boolean
++unbind(r: Request&lt;CompanyRecord&gt;, e CompanyRecord , m: Model):void
++findMany(r: Request&lt;CompanyRecord&gt;): Collections&lt;CompanyRecord&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2149</x>
+      <y>238</y>
+      <w>154</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>200.0;20.0;10.0;20.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2373</x>
+      <y>448</y>
+      <w>224</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Service&gt;&gt;
+AuthenticatedCompanyRecordController
+--
+-initialise(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2478</x>
+      <y>399</y>
+      <w>35</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>385</y>
+      <w>238</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+AuthenticatedInvestorRecordRepository
+--
++findMany(): Collections&lt;InvestorRecord&gt;
++findOneById(int id): InvestorRecord</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>504</y>
+      <w>378</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Service&gt;&gt;
+AuthenticatedInvestorRecordShowService
+--
++authorise(r: Request&lt;InvestorRecord&gt;): boolean
++unbind(r: Request&lt;InvestorRecord&gt;, e: InvestorRecord, m: Model): void
++findOne(r: Request&lt;InvestorRecord&gt;): InvestorRecord</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>287</y>
+      <w>378</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+AuthenticatedInvestorRecordListService
+--
++authorise(r: Request&lt;InvestorRecord&gt;): boolean
++unbind(r: Request&lt;InvestorRecord&gt;, e InvestorRecord , m: Model):void
++findMany(r: Request&lt;InvestorRecord&gt;): Collections&lt;InvestorRecord&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>21</x>
+      <y>385</y>
+      <w>196</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Service&gt;&gt;
+AuthenticatedInvestorRecordController
+--
+-initialise(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>336</x>
+      <y>441</y>
+      <w>35</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>329</x>
+      <y>350</y>
+      <w>35</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>133</x>
+      <y>427</y>
+      <w>35</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>497</x>
+      <y>112</y>
+      <w>238</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+AuthenticatedAnnouncementRepository
+--
++findMany(): Collections&lt;Announcement&gt;
++findOneById(int id): Announcement</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>0</y>
+      <w>378</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+AuthenticatedAnnouncementListService
+--
++authorise(r: Request&lt;Announcement&gt;): boolean
++unbind(r: Request&lt;Announcement&gt;, e Announcement , m: Model):void
++findMany(r: Request&lt;Announcement&gt;): Collections&lt;Announcement&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>210</y>
+      <w>378</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Service&gt;&gt;
+AuthenticatedAnnouncementShowService
+--
++authorise(r: Request&lt;Announcement&gt;): boolean
++unbind(r: Request&lt;Announcement&gt;, e: Announcement, m: Model): void
++findOne(r: Request&lt;Announcement&gt;): Announcement</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>224</x>
+      <y>119</y>
+      <w>196</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Service&gt;&gt;
+AuthenticatedAnnouncementController
+--
+-initialise(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>518</x>
+      <y>168</y>
+      <w>35</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>525</x>
+      <y>63</y>
+      <w>35</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>343</x>
+      <y>63</y>
+      <w>35</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Use</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>595</y>
+      <w>378</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Service&gt;&gt;
+AuthenticatedOfferCreateService
+--
++bind(r: Request&lt;Offer&gt;, e: Offer, e: Errors): void
++instantiate(r: Request&lt;Offer&gt;): Offer {
++validate(r: Request&lt;Offer&gt;, e: Offer, e: Errors): void
++create(r: Request&lt;Offer&gt;, e: Offer): void
++authorise(r: Request&lt;Offer&gt;): boolean
++unbind(r: Request&lt;Offer&gt; request, e: Offer, m: Model): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1596</x>
+      <y>0</y>
+      <w>574</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Service&gt;&gt;
+AuthenticatedRequestCreateService
+--
++bind(r: Request&lt;acme.entities.requests.Request&gt;, e: acme.entities.requests.Request, e: Errors): void
++instantiate(r: Request&lt;acme.entities.requests.Request&gt;): acme.entities.requests.Request {
++validate(r: Request&lt;acme.entities.requests.Request&gt;, e: acme.entities.requests.Request, e: Errors): void
++create(r: Request&lt;acme.entities.requests.Request&gt;, e: acme.entities.requests.Request): void
++authorise(r: Request&lt;acme.entities.requests.Request&gt; ): boolean
++unbind(r: Request&lt;acme.entities.requests.Request&gt; request, e: acme.entities.requests.Request, m: Model): void</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

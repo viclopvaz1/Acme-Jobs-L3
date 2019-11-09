@@ -14,7 +14,7 @@
 
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
-
+<jstl:if test="${command != 'create' }">
 <acme:form readonly="true">
 
 	<acme:form-textbox code="authenticated.offer.form.label.title" path="title" />
@@ -30,3 +30,21 @@
 
 	<acme:form-return code="authenticated.offer.form.button.return" />
 </acme:form>
+</jstl:if>
+
+<jstl:if test="${command == 'create' }">
+<acme:form readonly="false">
+
+	<acme:form-textbox code="authenticated.offer.form.label.title" path="title" />
+	<acme:form-textarea code="authenticated.offer.form.label.text" path="text" />
+
+	<acme:form-money code="authenticated.offer.form.label.rewardMax" path="rewardMax" />
+	<acme:form-money code="authenticated.offer.form.label.rewardMin" path="rewardMin" />
+
+	<acme:form-moment code="authenticated.offer.form.label.deadline" path="deadline" />
+	<acme:form-textbox code="authenticated.offer.form.label.ticker" path="ticker" />
+
+	<acme:form-submit code="authenticated.offer.form.button.create" action="/authenticated/offer/create"/>
+	<acme:form-return code="authenticated.offer.form.button.return" />
+</acme:form>
+</jstl:if>
