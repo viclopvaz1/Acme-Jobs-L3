@@ -61,6 +61,8 @@ master.menu.administrator.configuration = Lista de Spam
 master.menu.administrator.dashboard = DashBoard
 master.menu.administrator.estadistica = Estadistica
 master.menu.administrator.list-announcement = Lista de todos anuncios
+master.menu.administrator.list-company-record = Lista de registros de empresas
+master.menu.administrator.create-company-record = Crear un registro de empresa
 
 
 # master.menu.provider ########################################################
