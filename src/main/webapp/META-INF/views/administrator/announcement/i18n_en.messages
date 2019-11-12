@@ -8,13 +8,17 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-administrator.announcement.label.title = Title:
-administrator.announcement.label.moment = Moment:
-administrator.announcement.label.moreInfo = More Info:
-administrator.announcement.label.text = Text:
+administrator.announcement.form.label.title = Title:
+administrator.announcement.form.label.moment = Moment:
+administrator.announcement.form.label.moreInfo = More Info:
+administrator.announcement.form.label.text = Text:
 administrator.announcement.form.button.return = Return
 
 administrator.announcement.list.label.title = Title
 administrator.announcement.list.label.moment = Moment
 administrator.announcement.list.label.moreInfo = More Info
 administrator.announcement.list.label.text = Text
+
+administrator.announcement.form.button.update = Update
+administrator.announcement.form.button.delete = Delete
+administrator.announcement.form.button.create = Create
