@@ -61,6 +61,8 @@ master.menu.administrator.configuration = Spam List
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.estadistica = Statistics
 master.menu.administrator.list-announcement = List of all announcement
+master.menu.administrator.list-challenge = List Challenge
+master.menu.administrator.challenge = Create Challenge
 
 # master.menu.provider ########################################################
 
