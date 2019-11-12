@@ -61,6 +61,8 @@ master.menu.administrator.configuration = Lista de Spam
 master.menu.administrator.dashboard = DashBoard
 master.menu.administrator.estadistica = Estadistica
 master.menu.administrator.list-announcement = Lista de todos anuncios
+master.menu.administrator.create-investor-record = Crear de Investor Records
+master.menu.administrator.list-investor-record = Lista de Investor Records
 
 
 # master.menu.provider ########################################################

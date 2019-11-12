@@ -92,9 +92,12 @@
 			
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.list-announcement" action="/administrator/announcement/list" />
-
-		</acme:menu-option>
-
+			
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.list-investor-record" action="/administrator/investor-record/list" />
+			<acme:menu-suboption code="master.menu.administrator.create-investor-record" action="/administrator/investor-record/create" />
+			
+</acme:menu-option>
 	
 
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">

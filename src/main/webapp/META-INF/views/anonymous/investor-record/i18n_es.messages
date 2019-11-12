@@ -17,3 +17,5 @@ anonymous.investor-record.form.button.return = Volver
 
 anonymous.investor-record.list.label.investor = Inversor
 anonymous.investor-record.list.label.sector = Sector
+anonymous.investor-record.list.label.statement = Statement
+anonymous.investor-record.list.label.star = Número de Estrellas (entre 1 y 5):
