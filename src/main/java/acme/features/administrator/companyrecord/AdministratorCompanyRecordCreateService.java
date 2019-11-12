@@ -34,14 +34,14 @@ public class AdministratorCompanyRecordCreateService implements AbstractCreateSe
 		CompanyRecord result;
 
 		result = new CompanyRecord();
-		result.setName("Name");
-		result.setSector("Sector");
-		result.setCeo("ceo");
-		result.setDescription("descripcion");
-		result.setWebSite("https://nose.es");
-		result.setEmail("ejemplo@correo.es");
-		result.setPhone("+361 (5123) 456127");
-		result.setIndication(true);
+		result.setName("");
+		result.setSector("");
+		result.setCeo("");
+		result.setDescription("");
+		result.setWebSite("");
+		result.setEmail("");
+		result.setPhone("");
+		result.setIndication(null);
 		return result;
 	}
 
