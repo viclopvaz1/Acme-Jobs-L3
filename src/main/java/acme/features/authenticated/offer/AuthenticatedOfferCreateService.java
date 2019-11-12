@@ -71,6 +71,11 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 
 	@Override
 	public void validate(final Request<Offer> request, final Offer entity, final Errors errors) {
+		//Validar
+		//min<Max
+		//No 2 Tickets comprobar que no existe 2 iguales
+		//deadline en el futuro
+
 		assert request != null;
 		assert entity != null;
 		assert errors != null;

@@ -4,6 +4,7 @@ package acme.features.authenticated.request;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -40,8 +41,11 @@ public class AuthenticatedRequestListService implements AbstractListService<Auth
 		Collection<Request> result;
 		Calendar cal = Calendar.getInstance();
 		Date moment = cal.getTime();
-		int mes = moment.getMonth();
-		moment.setMonth(mes - 1);
+
+		Calendar calendar;
+		calendar = new GregorianCalendar();
+		calendar.add(Calendar.MONTH, -1);
+		moment = calendar.getTime();
 		result = this.repository.findManyByMoment(moment);
 
 		return result;
