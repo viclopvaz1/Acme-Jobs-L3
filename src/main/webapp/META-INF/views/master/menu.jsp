@@ -99,13 +99,14 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.list-investor-record" action="/administrator/investor-record/list" />
 			<acme:menu-suboption code="master.menu.administrator.create-investor-record" action="/administrator/investor-record/create" />
-			
-</acme:menu-option>
+
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.list-company-record" action="/administrator/company-record/list" />
+			<acme:menu-suboption code="master.menu.administrator.create-company-record" action="/administrator/company-record/create" />
 
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.list-challenge" action="/administrator/challenge/list"/>
 			<acme:menu-suboption code="master.menu.administrator.challenge" action="/administrator/challenge/create" />
-		
 			
 		</acme:menu-option>
 	

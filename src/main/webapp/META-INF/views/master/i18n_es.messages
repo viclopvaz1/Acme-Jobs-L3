@@ -66,6 +66,8 @@ master.menu.administrator.list-challenge = Lista Retos
 master.menu.administrator.challenge = Crear Reto
 master.menu.administrator.create-investor-record = Crear de Inversor
 master.menu.administrator.list-investor-record = Lista de Inversores
+master.menu.administrator.list-company-record = Lista de registros de empresas
+master.menu.administrator.create-company-record = Crear un registro de empresa
 
 # master.menu.provider ########################################################
 
