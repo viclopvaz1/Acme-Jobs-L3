@@ -90,7 +90,10 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.estadistica" action="/administrator/estadistica/list"/>
 			
+			
 			<acme:menu-separator/>
+		    <acme:menu-suboption code="master.menu.administrator.announcement" action="/administrator/announcement/create" />
+			
 			<acme:menu-suboption code="master.menu.administrator.list-announcement" action="/administrator/announcement/list" />
 			
 			<acme:menu-separator/>
@@ -98,6 +101,13 @@
 			<acme:menu-suboption code="master.menu.administrator.create-investor-record" action="/administrator/investor-record/create" />
 			
 </acme:menu-option>
+
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.list-challenge" action="/administrator/challenge/list"/>
+			<acme:menu-suboption code="master.menu.administrator.challenge" action="/administrator/challenge/create" />
+		
+			
+		</acme:menu-option>
 	
 
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">

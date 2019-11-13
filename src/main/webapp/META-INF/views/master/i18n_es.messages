@@ -12,7 +12,7 @@
 
 master.banner.background = #c4eede
 
-﻿# master.welcome ##############################################################
+# master.welcome ##############################################################
 
 master.welcome.title = ¡Bienvenidos!
 master.welcome.text = \
@@ -61,9 +61,11 @@ master.menu.administrator.configuration = Lista de Spam
 master.menu.administrator.dashboard = DashBoard
 master.menu.administrator.estadistica = Estadistica
 master.menu.administrator.list-announcement = Lista de todos anuncios
-master.menu.administrator.create-investor-record = Crear de Investor Records
-master.menu.administrator.list-investor-record = Lista de Investor Records
-
+master.menu.administrator.announcement = Crear anuncio
+master.menu.administrator.list-challenge = Lista Retos
+master.menu.administrator.challenge = Crear Reto
+master.menu.administrator.create-investor-record = Crear de Inversor
+master.menu.administrator.list-investor-record = Lista de Inversores
 
 # master.menu.provider ########################################################
 
@@ -138,5 +140,3 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
-	
-master.menu.administrator.estadistica = Estadisticas
