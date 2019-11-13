@@ -96,6 +96,11 @@
 			
 			<acme:menu-suboption code="master.menu.administrator.list-announcement" action="/administrator/announcement/list" />
 
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.list-challenge" action="/administrator/challenge/list"/>
+			<acme:menu-suboption code="master.menu.administrator.challenge" action="/administrator/challenge/create" />
+		
+			
 		</acme:menu-option>
 
 	

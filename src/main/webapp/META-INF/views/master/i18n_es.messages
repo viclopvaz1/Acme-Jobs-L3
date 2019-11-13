@@ -62,6 +62,8 @@ master.menu.administrator.dashboard = DashBoard
 master.menu.administrator.estadistica = Estadistica
 master.menu.administrator.list-announcement = Lista de todos anuncios
 master.menu.administrator.announcement = Crear anuncio
+master.menu.administrator.list-challenge = Lista Retos
+master.menu.administrator.challenge = Crear Reto
 
 # master.menu.provider ########################################################
 
