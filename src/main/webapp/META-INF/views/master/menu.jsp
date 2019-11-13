@@ -90,7 +90,10 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.estadistica" action="/administrator/estadistica/list"/>
 			
+			
 			<acme:menu-separator/>
+		    <acme:menu-suboption code="master.menu.administrator.announcement" action="/administrator/announcement/create" />
+			
 			<acme:menu-suboption code="master.menu.administrator.list-announcement" action="/administrator/announcement/list" />
 
 			<acme:menu-separator/>
