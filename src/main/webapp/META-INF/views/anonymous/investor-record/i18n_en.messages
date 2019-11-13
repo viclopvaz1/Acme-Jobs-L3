@@ -17,3 +17,5 @@ anonymous.investor-record.form.button.return = Return
 
 anonymous.investor-record.list.label.investor = Investor
 anonymous.investor-record.list.label.sector = Sector
+anonymous.investor-record.list.label.statement = Statement of Investor:
+anonymous.investor-record.list.label.star = Number of starts (between 1 and 5):
