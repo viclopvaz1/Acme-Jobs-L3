@@ -28,4 +28,5 @@ authenticated.offer.form.label.ticker= Ticker
 authenticated.offer.form.label.moment= Moment
 authenticated.offer.form.label.deadline = Deadline
 
+authenticated.offer.form.button.create = Create
 authenticated.offer.form.button.return = Return

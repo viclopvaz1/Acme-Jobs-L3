@@ -17,6 +17,7 @@ public class Estadistica implements Serializable {
 	@NotBlank
 	private String				nombre;
 
+	@NotBlank
 	private Double				valor;
 
 }

@@ -9,6 +9,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
@@ -30,14 +31,16 @@ public class Request extends DomainEntity {
 	@NotBlank
 	private String				text;
 
+	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	private Date				moment;
 
 	@Temporal(TemporalType.TIMESTAMP)
-
+	@NotNull
 	private Date				deadline;
 
+	@NotNull
 	@Valid
 	private Money				reward;
 

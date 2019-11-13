@@ -24,4 +24,5 @@ authenticated.request.form.label.ticker= Ticker
 authenticated.request.form.label.moment= Moment
 authenticated.request.form.label.deadline = Deadline
 
+authenticated.request.form.button.create = Create
 authenticated.request.form.button.return = Return

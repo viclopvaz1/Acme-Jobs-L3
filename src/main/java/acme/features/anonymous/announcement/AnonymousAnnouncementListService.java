@@ -45,8 +45,6 @@ public class AnonymousAnnouncementListService implements AbstractListService<Ano
 		Collection<Announcement> result;
 		Calendar cal = Calendar.getInstance();
 		Date moment = cal.getTime();
-		int mes = moment.getMonth();
-		moment.setMonth(mes - 1);
 
 		result = this.repository.findManyByMoment(moment);
 

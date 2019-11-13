@@ -72,6 +72,7 @@ master.menu.administrator.challenge = Create Challenge
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider
+master.menu.provider.create-request = Create Request
 master.menu.provider.favourite-link = Favourite link
 master.menu.provider.favourite-linkJ = Favourite link josruialb
 master.menu.provider.favourite-linkV = Favourite link viclopvaz1
@@ -82,6 +83,7 @@ master.menu.provider.favourite-linkAC = Favourite link antcorlav
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumer
+master.menu.consumer.create-offer = Create Offer
 master.menu.consumer.favourite-link = Favourite link
 master.menu.consumer.favourite-linkJ = Favourite link josruialb
 master.menu.consumer.favourite-linkV = Favourite link viclopvaz1
