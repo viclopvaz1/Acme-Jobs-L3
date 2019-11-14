@@ -12,7 +12,7 @@
 
 master.banner.background = #c4eede
 
-﻿# master.welcome ##############################################################
+# master.welcome ##############################################################
 
 master.welcome.title = ¡Bienvenidos!
 master.welcome.text = \
@@ -61,12 +61,18 @@ master.menu.administrator.configuration = Lista de Spam
 master.menu.administrator.dashboard = DashBoard
 master.menu.administrator.estadistica = Estadistica
 master.menu.administrator.list-announcement = Lista de todos anuncios
+master.menu.administrator.announcement = Crear anuncio
 master.menu.administrator.list-challenge = Lista Retos
 master.menu.administrator.challenge = Crear Reto
+master.menu.administrator.create-investor-record = Crear de Inversor
+master.menu.administrator.list-investor-record = Lista de Inversores
+master.menu.administrator.list-company-record = Lista de registros de empresas
+master.menu.administrator.create-company-record = Crear un registro de empresa
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
+master.menu.provider.create-request = Crear Solicitud
 master.menu.provider.favourite-link = Enlace favorito
 master.menu.provider.favourite-linkJ = Enlace de Josruialb
 master.menu.provider.favourite-linkV = Enlace de Viclopvaz1
@@ -77,6 +83,7 @@ master.menu.provider.favourite-linkAC = Enlace de Antcorlav
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumidor
+master.menu.consumer.create-offer = Crear Oferta
 master.menu.consumer.favourite-link = Enlace favorito
 master.menu.consumer.favourite-linkJ = Enlace de Josruialb
 master.menu.consumer.favourite-linkV = Enlace de Viclopvaz1
@@ -137,5 +144,3 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
-	
-master.menu.administrator.estadistica = Estadisticas

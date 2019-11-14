@@ -46,7 +46,6 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 		assert model != null;
 
 		request.unbind(entity, model, "deadline", "description", "title");
-
 	}
 
 	@Override
@@ -84,6 +83,7 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 
 		if (!errors.hasErrors("bronzeReward")) {
 			errors.state(request, entity.getBronzeReward().getCurrency().equals("EUR") || entity.getBronzeReward().getCurrency().equals("€"), "bronzeReward", "administrator.challenge.form.error.zoneEurB");
+
 		}
 
 	}

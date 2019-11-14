@@ -1,7 +1,10 @@
 
 package acme.features.authenticated.offer;
 
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,7 +40,14 @@ public class AuthenticatedOfferListService implements AbstractListService<Authen
 	public Collection<Offer> findMany(final Request<Offer> request) {
 		assert request != null;
 		Collection<Offer> result;
-		result = this.repository.findMany();
+		Calendar cal = Calendar.getInstance();
+		Date moment = cal.getTime();
+
+		Calendar calendar;
+		calendar = new GregorianCalendar();
+		calendar.add(Calendar.MONTH, -1);
+		moment = calendar.getTime();
+		result = this.repository.findManyByMoment(moment);
 
 		return result;
 	}

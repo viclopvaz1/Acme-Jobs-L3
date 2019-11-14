@@ -32,6 +32,7 @@ public class AdministratorChallengeDeleteService implements AbstractDeleteServic
 		assert errors != null;
 
 		request.bind(entity, errors);
+
 	}
 
 	@Override
@@ -41,6 +42,7 @@ public class AdministratorChallengeDeleteService implements AbstractDeleteServic
 		assert request != null;
 
 		request.unbind(entity, model, "deadline", "description", "titles");
+
 	}
 
 	@Override
