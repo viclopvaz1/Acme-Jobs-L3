@@ -4,6 +4,7 @@ package acme.features.anonymous.announcement;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -43,10 +44,9 @@ public class AnonymousAnnouncementListService implements AbstractListService<Ano
 		assert request != null;
 
 		Collection<Announcement> result;
-		Calendar cal = Calendar.getInstance();
+		Calendar cal = new GregorianCalendar();
+		cal.add(Calendar.MONTH, -1);
 		Date moment = cal.getTime();
-		int mes = moment.getMonth();
-		moment.setMonth(mes - 1);
 
 		result = this.repository.findManyByMoment(moment);
 
