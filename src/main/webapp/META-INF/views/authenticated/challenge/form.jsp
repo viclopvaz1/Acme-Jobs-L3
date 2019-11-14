@@ -18,7 +18,7 @@
 <acme:form readonly="true">
 	<acme:form-textbox code="authenticated.challenge.form.label.title" path="title"/>
 	<acme:form-textarea code="authenticated.challenge.form.label.description" path="description"/>
-	<acme:form-moment code="authenticated.challenge.form.label.moment" path="moment"/>
+	<acme:form-moment code="authenticated.challenge.form.label.deadline" path="deadline"/>
 	<acme:form-money code="authenticated.challenge.form.label.goldReward" path="goldReward"/>
 	<acme:form-money code="authenticated.challenge.form.label.silverReward" path="silverReward"/>
 	<acme:form-money code="authenticated.challenge.form.label.bronzeReward" path="bronzeReward"/>

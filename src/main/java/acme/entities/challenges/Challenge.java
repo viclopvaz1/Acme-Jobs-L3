@@ -46,5 +46,5 @@ public class Challenge extends DomainEntity {
 	private Money				bronzeReward;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date				moment;
+	private Date				deadline;
 }

@@ -1,7 +1,9 @@
 
 package acme.features.administrator.challenge;
 
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -33,7 +35,7 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "moment");
+		request.bind(entity, errors);
 
 	}
 
@@ -43,8 +45,7 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "moment", "description", "title");
-
+		request.unbind(entity, model, "deadline", "description", "title");
 	}
 
 	@Override
@@ -62,22 +63,34 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 		assert entity != null;
 		assert errors != null;
 
-		if (entity.getBronzeReward().getAmount() <= 0 || entity.getSilverReward().getAmount() <= 0 || entity.getGoldReward().getAmount() <= 0) {
-			errors.add("", "La cantidad de dinero debe ser mayor a 0");
+		Calendar calendar;
+		Date minimunDeadline;
+
+		if (!errors.hasErrors("deadline")) {
+			calendar = new GregorianCalendar();
+			calendar.add(Calendar.DAY_OF_MONTH, 7);
+			minimunDeadline = calendar.getTime();
+			errors.state(request, entity.getDeadline().after(minimunDeadline), "deadline", "administrator.challenge.form.error.tooClose");
 		}
 
-		if (entity.getBronzeReward().getCurrency() == "€" || entity.getSilverReward().getCurrency() == "€" || entity.getGoldReward().getCurrency() == "€") {
-			errors.add("", "La moneda debe ser euros");
+		if (!errors.hasErrors("goldReward")) {
+			errors.state(request, entity.getGoldReward().getCurrency().equals("EUR") || entity.getGoldReward().getCurrency().equals("€"), "goldReward", "administrator.challenge.form.error.zoneEurG");
+		}
+
+		if (!errors.hasErrors("silverReward")) {
+			errors.state(request, entity.getSilverReward().getCurrency().equals("EUR") || entity.getSilverReward().getCurrency().equals("€"), "silverReward", "administrator.challenge.form.error.zoneEurS");
+		}
+
+		if (!errors.hasErrors("bronzeReward")) {
+			errors.state(request, entity.getBronzeReward().getCurrency().equals("EUR") || entity.getBronzeReward().getCurrency().equals("€"), "bronzeReward", "administrator.challenge.form.error.zoneEurB");
+
 		}
 
 	}
 
 	@Override
 	public void create(final Request<Challenge> request, final Challenge entity) {
-		Date moment;
 
-		moment = new Date(System.currentTimeMillis() - 1);
-		entity.setMoment(moment);
 		this.repository.save(entity);
 
 	}

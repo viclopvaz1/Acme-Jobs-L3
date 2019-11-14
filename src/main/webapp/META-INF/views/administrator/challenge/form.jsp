@@ -18,12 +18,7 @@
 <acme:form>
 	<acme:form-textbox code="administrator.challenge.form.label.title" path="title"/>
 	<acme:form-textarea code="administrator.challenge.form.label.description" path="description"/>
-	<jstl:if test="${command != 'create' }">
-		<acme:form-moment 
-		code="administrator.challenge.form.label.moment" 
-		path="moment"
-		readonly="true"/>
-	</jstl:if>
+	<acme:form-moment code="administrator.challenge.form.label.deadline" path="deadline"/>
 	<acme:form-money code="administrator.challenge.form.label.goldReward" path="goldReward"/>
 	<acme:form-money code="administrator.challenge.form.label.silverReward" path="silverReward"/>
 	<acme:form-money code="administrator.challenge.form.label.bronzeReward" path="bronzeReward"/>
