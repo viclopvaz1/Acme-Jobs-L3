@@ -39,6 +39,7 @@ public class Offer extends DomainEntity {
 
 	@Valid
 	private Money				rewardMax;
+
 	@Valid
 	private Money				rewardMin;
 

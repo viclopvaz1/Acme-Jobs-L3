@@ -27,6 +27,7 @@
 	<acme:form-textbox code="consumer.offer.form.label.ticker" path="ticker" />
 	
 	<acme:form-checkbox code="consumer.offer.form.label.sure" path="sure"/>
-
+	
+	<acme:form-submit code="consumer.offer.form.button.create" action="/consumer/offer/create"/>
 	<acme:form-return code="consumer.offer.form.button.return" />
 </acme:form>

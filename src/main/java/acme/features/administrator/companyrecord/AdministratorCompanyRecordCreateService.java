@@ -41,7 +41,6 @@ public class AdministratorCompanyRecordCreateService implements AbstractCreateSe
 		result.setWebSite("");
 		result.setEmail("");
 		result.setPhone("");
-		result.setIndication(null);
 		return result;
 	}
 

@@ -20,14 +20,14 @@
 
 
 
-	<definition name="authenticated/offer/list" extends="master">		
-		<put-attribute name="body" type="template" value="../authenticated/offer/list.jsp" />
+	<definition name="consumer/offer/list" extends="master">		
+		<put-attribute name="body" type="template" value="../consumer/offer/list.jsp" />
 	</definition>
 	
 	
 
-	<definition name="authenticated/offer/form" extends="master">		
-		<put-attribute name="body" type="template" value="../authenticated/offer/form.jsp" />
+	<definition name="consumer/offer/form" extends="master">		
+		<put-attribute name="body" type="template" value="../consumer/offer/form.jsp" />
 	</definition>
 	
 	

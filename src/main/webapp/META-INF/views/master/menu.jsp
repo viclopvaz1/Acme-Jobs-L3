@@ -90,71 +90,17 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.estadistica" action="/administrator/estadistica/list"/>
 			
-			
-			<acme:menu-separator/>
-		    <acme:menu-suboption code="master.menu.administrator.announcement" action="/administrator/announcement/create" />
-			
-			<acme:menu-suboption code="master.menu.administrator.list-announcement" action="/administrator/announcement/list" />
-			
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.list-investor-record" action="/administrator/investor-record/list" />
-			<acme:menu-suboption code="master.menu.administrator.create-investor-record" action="/administrator/investor-record/create" />
-      
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.list-company-record" action="/administrator/company-record/list" />
-			<acme:menu-suboption code="master.menu.administrator.create-company-record" action="/administrator/company-record/create" />
-
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.list-challenge" action="/administrator/challenge/list"/>
-			<acme:menu-suboption code="master.menu.administrator.challenge" action="/administrator/challenge/create" />
-			
-		</acme:menu-option>
-	
-		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
-		<acme:menu-suboption code="master.menu.authenticated.request.list-request" action="/authenticated/request/list" />		
-			<acme:menu-separator/>
-		
-		<acme:menu-suboption code="master.menu.authenticated.offer.list-offer" action="/authenticated/offer/list" />	
-			<acme:menu-separator/>
-		
-		<acme:menu-suboption code="master.menu.authenticated.list-announcement" action="/authenticated/announcement/list" />
-			<acme:menu-separator/>
-		
-		<acme:menu-suboption code="master.menu.authenticated.list-company-record" action="/authenticated/company-record/list" />
-			<acme:menu-separator/>	
-		
-		<acme:menu-suboption code="master.menu.authenticated.list-investor-record" action="/authenticated/investor-record/list" />
-			<acme:menu-separator/>
-		
-		<acme:menu-suboption code="master.menu.authenticated.list-challenge" action="/authenticated/challenge/list"/>
-			<acme:menu-separator/>
-		
-				</acme:menu-option>
-
-		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
-			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
-			<acme:menu-separator/>
-
-			<acme:menu-suboption code="master.menu.administrator.configuration" action="/administrator/configuration/list" />	
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show" />			
-				
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.estadistica" action="/administrator/estadistica/list"/>
-			
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.list-announcement" action="/administrator/announcement/list" />
 
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
-			<acme:menu-suboption code="master.menu.consumer.create-offer" action="/authenticated/offer/create" />
+			<acme:menu-suboption code="master.menu.consumer.create-offer" action="/consumer/offer/create" />
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
-			<acme:menu-suboption code="master.menu.provider.create-request" action="/authenticated/request/create" />
+			<acme:menu-suboption code="master.menu.provider.create-request" action="/provider/request/create" />
 		</acme:menu-option>
 		
 	</acme:menu-left>

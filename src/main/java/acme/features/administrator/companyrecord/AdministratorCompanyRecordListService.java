@@ -41,15 +41,6 @@ public class AdministratorCompanyRecordListService implements AbstractListServic
 
 		Collection<CompanyRecord> result = this.repository.findMany();
 
-		for (CompanyRecord cr : result) {
-			String name = cr.getName();
-			if (cr.getIndication()) {
-				cr.setName(name + ", Inc");
-			} else {
-				cr.setName(name + ", LLC");
-			}
-		}
-
 		return result;
 	}
 

@@ -28,5 +28,6 @@
 
 	<acme:form-checkbox code="provider.request.form.label.sure" path="sure"/>
 
+	<acme:form-submit code="provider.request.form.button.create" action="/provider/request/create"/>
 	<acme:form-return code="provider.request.form.button.return" />
 </acme:form>

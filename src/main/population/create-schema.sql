@@ -64,7 +64,7 @@
         `ceo` varchar(255),
         `description` varchar(255),
         `email` varchar(255),
-        `indication` bit,
+        `indication` bit not null,
         `name` varchar(255),
         `phone` varchar(255),
         `sector` varchar(255),
