@@ -31,12 +31,6 @@ master.menu.sign-out = Sign out
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anonymous
-master.menu.anonymous.favourite-link = Favourite link
-master.menu.anonymous.favourite-linkJ = Favourite link josruialb
-master.menu.anonymous.favourite-linkV = Favourite link viclopvaz1
-master.menu.anonymous.favourite-linkA = Favourite link albcorare26
-master.menu.anonymous.favourite-linkD = Favourite link dansangar2
-master.menu.anonymous.favourite-linkAC = Favourite link antcorlav
 master.menu.anonymous.shout = Shout!
 master.menu.anonymous.list-shout = List Shout!
 
@@ -60,29 +54,24 @@ master.menu.administrator.shutdown = Shut down
 master.menu.administrator.configuration = Spam List
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.estadistica = Statistics
-master.menu.administrator.list-announcement = List of all announcement
+master.menu.administrator.announcement = Create Announcement
+master.menu.administrator.list-announcement = List of all Announcement
+master.menu.administrator.list-investor-record = List Investor Record
+master.menu.administrator.create-investor-record = Create Investor Record
+master.menu.administrator.list-company-record = List Company Record
+master.menu.administrator.create-company-record = Create Company Record
+master.menu.administrator.list-challenge = List Challenge
+master.menu.administrator.challenge = Create Challenge
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider
 master.menu.provider.create-request = Create Request
-master.menu.provider.favourite-link = Favourite link
-master.menu.provider.favourite-linkJ = Favourite link josruialb
-master.menu.provider.favourite-linkV = Favourite link viclopvaz1
-master.menu.provider.favourite-linkA = Favourite link albcoare26
-master.menu.provider.favourite-linkD = Favourite link dansangar2
-master.menu.provider.favourite-linkAC = Favourite link antcorlav
 
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumer
 master.menu.consumer.create-offer = Create Offer
-master.menu.consumer.favourite-link = Favourite link
-master.menu.consumer.favourite-linkJ = Favourite link josruialb
-master.menu.consumer.favourite-linkV = Favourite link viclopvaz1
-master.menu.consumer.favourite-linkA = Favourite link albcoare26
-master.menu.consumer.favourite-linkD = Favourite link dansangar2
-master.menu.consumer.favourite-linkAC = Favourite link antcorlav
 
 # master.menu.user-account ####################################################
 

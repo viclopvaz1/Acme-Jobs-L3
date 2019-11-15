@@ -159,7 +159,7 @@
 	<bean id ="challenge01" class="acme.entities.challenges.Challenge">
 	<property name="title" value="titulo1"></property> 
 	<property name="description" value="description1"></property> 
-	<property name="moment" value="2020/02/25 00:00"></property> 
+	<property name="deadline" value="2020/02/25 00:00"></property> 
 	<property name="goldReward" value="1500.0€"></property> 
 	<property name="silverReward" value="1500.0€"></property> 
 	<property name="bronzeReward" value="1500.0€"></property> 
