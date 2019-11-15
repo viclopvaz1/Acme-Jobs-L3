@@ -18,6 +18,8 @@ consumer.offer.list.label.deadline= Deadline
 consumer.offer.list.label.moment= Moment
 consumer.offer.list.label.text= Text
 consumer.offer.list.label.title= Title
+
+consumer.offer.error.dateafter = Date must be in future
  
 consumer.offer.form.label.rewardMax = Reward max
 consumer.offer.form.label.rewardMin = Reward min

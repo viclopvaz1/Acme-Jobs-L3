@@ -90,24 +90,9 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.estadistica" action="/administrator/estadistica/list"/>
 			
-			
 			<acme:menu-separator/>
-		    <acme:menu-suboption code="master.menu.administrator.announcement" action="/administrator/announcement/create" />
-			
 			<acme:menu-suboption code="master.menu.administrator.list-announcement" action="/administrator/announcement/list" />
-			
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.list-investor-record" action="/administrator/investor-record/list" />
-			<acme:menu-suboption code="master.menu.administrator.create-investor-record" action="/administrator/investor-record/create" />
-      
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.list-company-record" action="/administrator/company-record/list" />
-			<acme:menu-suboption code="master.menu.administrator.create-company-record" action="/administrator/company-record/create" />
 
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.list-challenge" action="/administrator/challenge/list"/>
-			<acme:menu-suboption code="master.menu.administrator.challenge" action="/administrator/challenge/create" />
-			
 		</acme:menu-option>
 	
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
@@ -150,11 +135,11 @@
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
-			<acme:menu-suboption code="master.menu.consumer.create-offer" action="/authenticated/offer/create" />
+			<acme:menu-suboption code="master.menu.consumer.create-offer" action="/consumer/offer/create" />
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
-			<acme:menu-suboption code="master.menu.provider.create-request" action="/authenticated/request/create" />
+			<acme:menu-suboption code="master.menu.provider.create-request" action="/provider/request/create" />
 		</acme:menu-option>
 		
 	</acme:menu-left>

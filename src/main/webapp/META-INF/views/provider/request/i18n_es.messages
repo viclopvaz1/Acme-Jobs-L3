@@ -26,5 +26,5 @@ provider.request.form.label.deadline = Fecha vencimiento
 
 provider.request.form.label.sure = ¿Estás seguro?
 
-authenticated.request.form.button.create = Crear
-authenticated.request.form.button.return = Volver
+provider.request.form.button.create = Crear
+provider.request.form.button.return = Volver
