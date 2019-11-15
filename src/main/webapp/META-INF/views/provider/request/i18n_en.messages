@@ -27,3 +27,8 @@ provider.request.form.label.sure = Are you sure?
 
 provider.request.form.button.create = Create
 provider.request.form.button.return = Return
+
+provider.request.error.dateafter = Deadline must be in future
+provider.request.error.euro = Only the euro, EUR or € currency is allowed
+provider.request.error.sure = The checkbox must be selected
+provider.request.error.tickers = This Ticker has already been registered

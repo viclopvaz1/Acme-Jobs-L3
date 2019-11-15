@@ -18,8 +18,6 @@ consumer.offer.list.label.deadline= Deadline
 consumer.offer.list.label.moment= Moment
 consumer.offer.list.label.text= Text
 consumer.offer.list.label.title= Title
-
-consumer.offer.error.dateafter = Date must be in future
  
 consumer.offer.form.label.rewardMax = Reward max
 consumer.offer.form.label.rewardMin = Reward min
@@ -33,3 +31,9 @@ consumer.offer.form.label.sure = Are you sure?
 
 consumer.offer.form.button.create = Create
 consumer.offer.form.button.return = Return
+
+consumer.offer.error.dateafter = Deadline must be in future
+consumer.offer.error.euro = Only the euro, EUR or € currency is allowed
+consumer.offer.error.minmax = The Maximum Reward must be greater than the Minimum
+consumer.offer.error.sure = The checkbox must be selected
+consumer.offer.error.tickers = This Ticker has already been registered

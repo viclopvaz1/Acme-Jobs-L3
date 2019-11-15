@@ -13,20 +13,27 @@
  
 consumer.offer.list.label.ticker= Identificador
 consumer.offer.list.label.reward=  Recompensa
-consumer.offer.list.label.deadline= Fecha vencimiento
-consumer.offer.list.label.moment= Fecha publicacion
+consumer.offer.list.label.deadline= Fecha Fin
+consumer.offer.list.label.moment= Fecha Publicacion
 consumer.offer.list.label.text= Texto 
 consumer.offer.list.label.title= Titulo
+
  
-consumer.offer.form.label.rewardMax =Recompensa max
-consumer.offer.form.label.rewardMin =Recompensa min
+consumer.offer.form.label.rewardMax = Recompensa Maxima
+consumer.offer.form.label.rewardMin = Recompensa Minima
 
 consumer.offer.form.label.title = Titulo
 consumer.offer.form.label.text = Texto
 consumer.offer.form.label.ticker = Identificador
-consumer.offer.form.label.deadline = Fecha vencimiento
+consumer.offer.form.label.deadline = Fecha Fin
 
 consumer.offer.form.label.sure = ¿Estás seguro?
 
 consumer.offer.form.button.create = Crear
 consumer.offer.form.button.return = Volver
+
+consumer.offer.error.dateafter = La Fecha de Fin debe de estar en el futuro
+consumer.offer.error.euro = Solo se permite la moneda euro, EUR o €
+consumer.offer.error.minmax = La Recompensa Maxima debe ser mayor a la Minima
+consumer.offer.error.sure = La casilla de verificación debe estar seleccionada
+consumer.offer.error.tickers = Este Identificador ha sido ya registrado

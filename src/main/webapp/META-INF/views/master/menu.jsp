@@ -94,45 +94,6 @@
 			<acme:menu-suboption code="master.menu.administrator.list-announcement" action="/administrator/announcement/list" />
 
 		</acme:menu-option>
-	
-		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
-		<acme:menu-suboption code="master.menu.authenticated.request.list-request" action="/authenticated/request/list" />		
-			<acme:menu-separator/>
-		
-		<acme:menu-suboption code="master.menu.authenticated.offer.list-offer" action="/authenticated/offer/list" />	
-			<acme:menu-separator/>
-		
-		<acme:menu-suboption code="master.menu.authenticated.list-announcement" action="/authenticated/announcement/list" />
-			<acme:menu-separator/>
-		
-		<acme:menu-suboption code="master.menu.authenticated.list-company-record" action="/authenticated/company-record/list" />
-			<acme:menu-separator/>	
-		
-		<acme:menu-suboption code="master.menu.authenticated.list-investor-record" action="/authenticated/investor-record/list" />
-			<acme:menu-separator/>
-		
-		<acme:menu-suboption code="master.menu.authenticated.list-challenge" action="/authenticated/challenge/list"/>
-			<acme:menu-separator/>
-		
-				</acme:menu-option>
-
-		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
-			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
-			<acme:menu-separator/>
-
-			<acme:menu-suboption code="master.menu.administrator.configuration" action="/administrator/configuration/list" />	
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show" />			
-				
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.estadistica" action="/administrator/estadistica/list"/>
-			
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.list-announcement" action="/administrator/announcement/list" />
-
-		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.create-offer" action="/consumer/offer/create" />
