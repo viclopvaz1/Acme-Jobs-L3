@@ -4,7 +4,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-<acme:list-column code="administrator.challenge.list.label.moment" path="moment" width="10%"/>
+<acme:list-column code="administrator.challenge.list.label.deadline" path="deadline" width="10%"/>
 <acme:list-column code="administrator.challenge.list.label.description" path="description" width="25%"/>
 <acme:list-column code="administrator.challenge.list.label.title" path="title" width="25%"/>
 </acme:list>

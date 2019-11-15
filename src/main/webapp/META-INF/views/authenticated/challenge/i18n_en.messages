@@ -8,11 +8,11 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.challenge.list.label.moment = Moment
+authenticated.challenge.list.label.deadline = Deadline
 authenticated.challenge.list.label.description = Description 
 authenticated.challenge.list.label.title = Title
 
-authenticated.challenge.form.label.moment = Moment
+authenticated.challenge.form.label.deadline = Deadline
 authenticated.challenge.form.label.description = Description
 authenticated.challenge.form.label.title = Title
 authenticated.challenge.form.label.goldReward = Reward for gold
@@ -22,4 +22,4 @@ authenticated.challenge.form.label.goldGoal = Goal for gold
 authenticated.challenge.form.label.silverGoal = Goal for silver
 authenticated.challenge.form.label.bronzeGoal = Goal for bronze
 
-authenticated.challenge.form.button.return = return
+authenticated.challenge.form.button.return = Return
