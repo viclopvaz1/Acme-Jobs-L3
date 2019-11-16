@@ -22,6 +22,9 @@
 	<canvas id="canvas"></canvas>
 </div>
 </br>
+<h2>
+	<acme:message code="administrator.dashboard.form.message2"/>
+</h2>
 <div>
 	<canvas id="canvas2"></canvas>
 </div>
