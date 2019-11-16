@@ -68,6 +68,12 @@ master.menu.administrator.list-company-record = Lista de Empresas
 master.menu.administrator.create-company-record = Crear Empresa
 master.menu.administrator.list-challenge = Lista de Retos
 master.menu.administrator.challenge = Crear Retos
+master.menu.administrator.list-comercial-banner = Lista de Banner Comerciales
+master.menu.administrator.comercial-banner = Crear Banner Comercial
+
+master.menu.administrator.create-non-comercial-banner = Crear non comercial banner
+master.menu.administrator.list-non-comercial-banner = Lista non comercial banner
+
 
 # master.menu.provider ########################################################
 
