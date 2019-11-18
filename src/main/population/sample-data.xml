@@ -89,7 +89,7 @@
 <bean id = "offer02" class = "acme.entities.offers.Offer">
 <property name= "title" value= "Offer2"/>
 <property name= "text" value= "Viva mi beti 2.0"/>
-<property name= "moment" value= "2019/09/09 10:00"/>
+<property name= "moment" value= "2019/11/18 10:00"/>
 <property name= "deadline" value= "2039/09/09 10:00"/>
 <property name= "ticker" value= "OABCD-00002"/>
 <property name= "rewardMax" value= "1000.0€"/>
@@ -122,7 +122,7 @@
 <bean id = "request02" class = "acme.entities.requests.Request">
 <property name= "title" value= "Request002"/>
 <property name= "text" value= "Viva mi beti 2.0"/>
-<property name= "moment" value= "2019/09/09 10:00"/>
+<property name= "moment" value= "2019/11/18 10:00"/>
 <property name= "deadline" value= "2039/09/09 10:00"/>
 <property name= "ticker" value= "RABCD-00002"/>
 <property name= "reward" value= "500.0€"/>
