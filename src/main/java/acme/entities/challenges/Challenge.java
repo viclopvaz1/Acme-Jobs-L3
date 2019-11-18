@@ -8,6 +8,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
@@ -36,15 +37,19 @@ public class Challenge extends DomainEntity {
 	@NotBlank
 	private String				bronzeGoal;
 
+	@NotNull
 	@Valid
 	private Money				goldReward;
 
+	@NotNull
 	@Valid
 	private Money				silverReward;
 
+	@NotNull
 	@Valid
 	private Money				bronzeReward;
 
+	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				deadline;
 }
