@@ -2,6 +2,8 @@
 package acme.entities.investorrecords;
 
 import javax.persistence.Entity;
+import javax.persistence.Index;
+import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -14,6 +16,9 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@Table(indexes = {
+	@Index(columnList = "star")
+})
 public class InvestorRecord extends DomainEntity {
 
 	public static final long	serialVersionUID	= 1L;
