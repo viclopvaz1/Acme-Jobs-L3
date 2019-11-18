@@ -81,12 +81,12 @@ public class ConsumerOfferCreateService implements AbstractCreateService<Consume
 			errors.state(request, entity.getDeadline().after(new Date(System.currentTimeMillis() - 1)), "deadline", "consumer.offer.error.dateafter");
 		}
 		if (!errors.hasErrors("rewardMin")) {
-			errors.state(request, entity.getRewardMin().getCurrency().equals("€"), "rewardMin", "consumer.offer.error.euro");
+			errors.state(request, entity.getRewardMin().getCurrency().equals("€") || entity.getRewardMin().getCurrency().equals("EUR"), "rewardMin", "consumer.offer.error.euro");
 		}
 
 		if (!errors.hasErrors("rewardMax")) {
 			errors.state(request, entity.getRewardMin().getAmount() < entity.getRewardMax().getAmount(), "rewardMax", "consumer.offer.error.minmax");
-			errors.state(request, entity.getRewardMax().getCurrency().equals("€"), "rewardMax", "consumer.offer.error.euro");
+			errors.state(request, entity.getRewardMax().getCurrency().equals("€") || entity.getRewardMax().getCurrency().equals("EUR"), "rewardMax", "consumer.offer.error.euro");
 		}
 
 		if (!errors.hasErrors("ticker")) {

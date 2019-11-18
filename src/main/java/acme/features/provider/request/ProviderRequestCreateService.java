@@ -73,7 +73,7 @@ public class ProviderRequestCreateService implements AbstractCreateService<Provi
 			errors.state(request, entity.getDeadline().after(new Date(System.currentTimeMillis() - 1)), "deadline", "provider.request.error.dateafter");
 		}
 		if (!errors.hasErrors("reward")) {
-			errors.state(request, entity.getReward().getCurrency().equals("€"), "reward", "provider.request.error.euro");
+			errors.state(request, entity.getReward().getCurrency().equals("€") || entity.getReward().getCurrency().equals("EUR"), "reward", "provider.request.error.euro");
 		}
 
 		if (!errors.hasErrors("ticker")) {
