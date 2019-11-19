@@ -23,8 +23,10 @@
 	<acme:form-url code="administrator.company-record.label.webSite" path="webSite"/>
 	<acme:form-textbox code="administrator.company-record.label.phone" path="phone"/>
 	<acme:form-textbox code="administrator.company-record.label.email" path="email"/>
-	<acme:form-textbox code="administrator.company-record.label.indication" path="indication"/>
-	<acme:form-textbox code="administrator.company-record.label.star" path="star"/>
+	<acme:form-textbox code="administrator.company-record.label.star" path="star"/>	
+	<acme:form-checkbox code="administrator.company-record.label.indication" path="indication"/>
+
+	
 	
 	<acme:form-submit test="${command == 'show'}" code="administrator.company-record.form.buttom.update" action="/administrator/company-record/update"/>
   	<acme:form-submit test="${command == 'show'}" code="administrator.company-record.form.buttom.delete" action="/administrator/company-record/delete"/>
