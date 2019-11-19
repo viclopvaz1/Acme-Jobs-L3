@@ -50,7 +50,7 @@ public class Request extends DomainEntity {
 	private Money				reward;
 
 	@NotBlank
-	@Pattern(regexp = "^\\R[a-zA-Z]{4}\\-[0-9]{5}$")//"RXXXX-99999"
+	@Pattern(regexp = "^R[a-zA-Z]{4}-[0-9]{5}$")//"RXXXX-99999"
 	@Column(unique = true)
 	private String				ticker;
 

@@ -19,8 +19,8 @@
 	<acme:form-textbox code="anonymous.company-record.label.name" path="name"/>
 	<acme:form-textbox code="anonymous.company-record.label.sector" path="sector"/>
 	<acme:form-textbox code="anonymous.company-record.label.ceo" path="ceo"/>
-	<acme:form-textbox code="anonymous.company-record.label.description" path="descrition"/>
-	<acme:form-url code="anonymous.company-record.label.webSite" path="website"/>
+	<acme:form-textbox code="anonymous.company-record.label.description" path="description"/>
+	<acme:form-url code="anonymous.company-record.label.webSite" path="webSite"/>
 	<acme:form-textbox code="anonymous.company-record.label.phone" path="phone"/>
 	<acme:form-textbox code="anonymous.company-record.label.email" path="email"/>
 	<acme:form-textbox code="anonymous.company-record.label.indication" path="indication"/>
