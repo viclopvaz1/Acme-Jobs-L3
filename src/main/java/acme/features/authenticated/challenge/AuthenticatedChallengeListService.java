@@ -37,7 +37,7 @@ public class AuthenticatedChallengeListService implements AbstractListService<Au
 	public Collection<Challenge> findMany(final Request<Challenge> request) {
 		assert request != null;
 		Collection<Challenge> result;
-		result = this.repository.findManyAll();
+		result = this.repository.findMany();
 
 		return result;
 	}

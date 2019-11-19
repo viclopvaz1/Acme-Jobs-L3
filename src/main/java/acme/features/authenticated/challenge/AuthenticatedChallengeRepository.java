@@ -27,6 +27,6 @@ public interface AuthenticatedChallengeRepository extends AbstractRepository {
 	Challenge findOneById(int id);
 
 	@Query("select a from Challenge a ")
-	Collection<Challenge> findManyAll();
+	Collection<Challenge> findMany();
 
 }
