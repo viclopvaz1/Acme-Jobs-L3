@@ -50,6 +50,7 @@ public class CompanyRecord extends DomainEntity {
 	@Email
 	private String				email;
 
+	@NotNull
 	private boolean				indication;
 
 	@NotNull

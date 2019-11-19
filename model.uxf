@@ -63,15 +63,15 @@ Announcement
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Challenge
 --
-+ title: String (NotBlank)
-+ moment: Date (Temporal(TIMESTAMP), Future)
-+ description: String (URL)
-+ goldG: String (NotBlank)
-+ silverG: String (NotBlank)
-+ bronzeG: String (NotBlank)
-+ goldR: String (NotBlank)
-+ silverR: String (NotBlank)
-+ bronzeR: String (NotBlank)</panel_attributes>
++ title: String {NotBlank}
++ deadline: Date {Temporal(TIMESTAMP), NotNull}
++ description: String {NotBlank}
++ goldG: String {NotBlank}
++ silverG: String {NotBlank}
++ bronzeG: String {NotBlank}
++ goldR: Money {Valid,NotNull}
++ silverR: Money {Valid,NotNull}
++ bronzeR: Money {Valid,NotNull}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -119,12 +119,12 @@ NonComercialBanner
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Request
 --
-+ title: String (NotBlank)
-+ text: String (NotBlank)
-+ moment: Date (Temporal(TIMESTAMP), Past)
-+ deadline: Date (Temporal(TIMESTAMP))
-+ reward: Money (Valid)
-+ ticker: String (NotBlank, Pattern(regexp = "^R[a-zA-Z]{4}-[0-9]{5}$"), Column(unique = true))</panel_attributes>
++ title: String {NotBlank}
++ text: String {NotBlank}
++ moment: Date {Temporal(TIMESTAMP), Past,NotNull}
++ deadline: Date {Temporal(TIMESTAMP),NotNull}
++ reward: Money {Valid,NotNull}
++ ticker: String {NotBlank, Pattern(regexp = "^R[a-zA-Z]{4}-[0-9]{5}$"), Column(unique = true)}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -138,13 +138,13 @@ Request
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Offer
 --
-+ title: String (NotBlank)
-+ text: String (NotBlank)
-+ moment: Date (Temporal(TIMESTAMP), Past)
-+ deadline: Date (Temporal(TIMESTAMP))
-+ rewardMax: Money (Valid)
-+ rewardMin: Money (Valid)
-+ ticker: String (NotBlank, Pattern(regexp = "^O[a-zA-Z]{4}-[0-9]{5}$"), Column(unique = true))
++ title: String {NotBlank}
++ text: String {NotBlank}
++ moment: Date {Temporal(TIMESTAMP), Past,NotNull}
++ deadline: Date {Temporal(TIMESTAMP),NotNull}
++ rewardMax: Money {Valid,NotNull}
++ rewardMin: Money {Valid,NotNull}
++ ticker: String {NotBlank, Pattern(regexp = "^O[a-zA-Z]{4}-[0-9]{5}$"), Column(unique = true)}
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -159,15 +159,15 @@ Offer
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 CompanyRecord
 --
-+ name: String (NotBlank)
-+ sector: String (NotBlank)
-+ ceo: String (NotBlank)
-+ webSite: String (NotBlank, URL)
-+ description: String (NotBlank)
-+ phone: String(NotBlank, Pattern(regexp = "\\+[1-9]\\d{0,2}\\s\\(\\d{1,4}\\)\\s\\d{6,10}")
-+ email: String(NotBlank ,email)
-+ indication: Boolean
-+ star: Integer (Range(min = 0, max = 5))</panel_attributes>
++ name: String {NotBlank}
++ sector: String {NotBlank}
++ ceo: String {NotBlank}
++ webSite: String {NotBlank, URL}
++ description: String {NotBlank}
++ phone: String{NotBlank, Pattern(regexp = "\\+[1-9]\\d{0,2}\\s\\(\\d{1,4}\\)\\s\\d{6,10}"}
++ email: String{NotBlank ,email}
++ indication: Boolean{NotNull}
++ star: Integer {Range(min = 0, max = 5),NotNull}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -479,7 +479,7 @@ InvestorRecord
 +investor {NotBlank}
 +sector {NotBlank}
 +statement {NotBlank}
-+starts {Range(min=1, max=5)}</panel_attributes>
++starts {Range(min=1, max=5),NotNull}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -504,19 +504,19 @@ InvestorRecord
       <x>1722</x>
       <y>112</y>
       <w>259</w>
-      <h>119</h>
+      <h>133</h>
     </coordinates>
     <panel_attributes>Challenge
 --
 + title: String (NotBlank)
-+ moment: Date (Temporal(TIMESTAMP), Future)
++ deadline: Date (Temporal(TIMESTAMP),NotNull)
 + description: String (URL)
 + goldG: String (NotBlank)
 + silverG: String (NotBlank)
 + bronzeG: String (NotBlank)
-+ goldR: String (NotBlank)
-+ silverR: String (NotBlank)
-+ bronzeR: String (NotBlank)</panel_attributes>
++ goldR: Money (NotBlank,NotNull)
++ silverR: Money (NotBlank,NotNull)
++ bronzeR: Money (NotBlank,NotNull)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -529,8 +529,8 @@ InvestorRecord
     </coordinates>
     <panel_attributes>Configuration
 --
-+ spamWords: Collection&lt;String&gt; (@ElementCollection(fetch = FetchType.EAGER))
-+ moment: Double (@DecimalMin(value = "1.0"),@DecimalMax(value = "100.0"))
++ spamWords: String {NotBlank}
++ moment: Double {DecimalMin(value = "1.0"),DecimalMax(value = "100.0")}
 </panel_attributes>
     <additional_attributes/>
   </element>
