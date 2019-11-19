@@ -31,3 +31,6 @@ administrator.challenge.form.error.tooClose = La Fecha de Fin debe estar una sem
 administrator.challenge.form.error.zoneEurG = Solo se permite la moneda euro, EUR o €
 administrator.challenge.form.error.zoneEurS = Solo se permite la moneda euro, EUR o €
 administrator.challenge.form.error.zoneEurB = Solo se permite la moneda euro, EUR o €
+
+administrator.challenge.form.error.goldBsilver = El objetivo de plata debe ser más bajo que el de oro
+administrator.challenge.form.error.silverBbronze = El objetivo de bronce debe ser más bajo que el de plata
