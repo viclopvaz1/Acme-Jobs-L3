@@ -1,6 +1,9 @@
 
 package acme.features.administrator.comercialbanner;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -41,7 +44,7 @@ public class AdministratorComercialBannerCreateService implements AbstractCreate
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "picture", "slogan", "targetUrl", "creditCard");
+		request.unbind(entity, model, "picture", "slogan", "targetUrl", "creditCard", "monthExp", "yearExp", "cvv");
 	}
 
 	@Override
@@ -58,6 +61,18 @@ public class AdministratorComercialBannerCreateService implements AbstractCreate
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
+		Calendar calendar = new GregorianCalendar();
+		Integer month = calendar.getTime().getMonth();
+		Integer year = calendar.getTime().getYear() + 1900;
+
+		if (!errors.hasErrors("monthExp")) {
+			errors.state(request, entity.getYearExp() > year || entity.getMonthExp() >= month && entity.getYearExp() == year, "monthExp", "administrator.comercial-banner.form.error.monthExp");
+		}
+
+		if (!errors.hasErrors("yearExp")) {
+			errors.state(request, entity.getYearExp() >= year, "yearExp", "administrator.comercial-banner.form.error.yearExp");
+		}
 
 	}
 

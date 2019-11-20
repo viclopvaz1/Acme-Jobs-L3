@@ -12,6 +12,9 @@ administrator.comercial-banner.form.picture = Imagen:
 administrator.comercial-banner.form.slogan = Eslogan:
 administrator.comercial-banner.form.targetUrl = Página Web
 administrator.comercial-banner.form.creditCard = Tarjeta de Crédito
+administrator.comercial-banner.form.monthExp = Mes Caducidad
+administrator.comercial-banner.form.yearExp = Año Caducidad
+administrator.comercial-banner.form.cvv = CVV
 
 administrator.comercial-banner.label.picture = Imagen
 administrator.comercial-banner.label.slogan = Eslogan
@@ -20,3 +23,6 @@ administrator.comercial-banner.form.button.create = Crear
 administrator.comercial-banner.form.button.update = Actualizar
 administrator.comercial-banner.form.button.delete = Borrar
 administrator.comercial-banner.form.button.return = Volver
+
+administrator.comercial-banner.form.error.monthExp = El mes de caducidad debe ser mayor o igual al mes actual, si es el mismo año.
+administrator.comercial-banner.form.error.yearExp = El año de caducidad debe ser mayor o igual al año actual.

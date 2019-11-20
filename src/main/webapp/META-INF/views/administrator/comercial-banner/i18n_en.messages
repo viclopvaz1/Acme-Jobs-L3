@@ -12,6 +12,9 @@ administrator.comercial-banner.form.picture = Picture:
 administrator.comercial-banner.form.slogan = Slogan:
 administrator.comercial-banner.form.targetUrl = Target URL
 administrator.comercial-banner.form.creditCard = Credit Card
+administrator.comercial-banner.form.monthExp = Month Expire
+administrator.comercial-banner.form.yearExp = Year Expire
+administrator.comercial-banner.form.cvv = CVV
 
 administrator.comercial-banner.label.picture = Picture
 administrator.comercial-banner.label.slogan = Slogan
@@ -20,3 +23,6 @@ administrator.comercial-banner.form.button.create = Create
 administrator.comercial-banner.form.button.update = Update
 administrator.comercial-banner.form.button.delete = Delete
 administrator.comercial-banner.form.button.return = Return
+
+administrator.comercial-banner.form.error.monthExp = The Month Expire must be greater than or equal to the current month, if it is the same year.
+administrator.comercial-banner.form.error.yearExp = The Year Month must be greater than or equal to the current year.
