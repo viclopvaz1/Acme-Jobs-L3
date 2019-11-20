@@ -52,9 +52,12 @@
        `id` integer not null,
         `version` integer not null,
         `credit_card` varchar(255),
+        `cvv` integer,
+        `month_exp` integer,
         `picture` varchar(255),
         `slogan` varchar(255),
         `target_url` varchar(255),
+        `year_exp` integer,
         primary key (`id`)
     ) engine=InnoDB;
 

@@ -88,7 +88,10 @@ ComercialBanner
 + picture: String {NotBlank}
 + slogan: String {NotBlank, URL}
 + targetUrl: String {NotBlank, URL}
-+ creditNumber: String {NotBlank, CreditNumber}</panel_attributes>
++ creditNumber: String {NotBlank, CreditNumber}
++ monthExp: Integer {NotNull, Range(min = 1, max = 12)}
++ yearExp: Integer {NotNull}
++ cvv: Integer {NotNull}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -167,7 +170,7 @@ CompanyRecord
 + phone: String{NotBlank, Pattern(regexp = "\\+[1-9]\\d{0,2}\\s\\(\\d{1,4}\\)\\s\\d{6,10}"}
 + email: String{NotBlank ,email}
 + indication: Boolean{NotNull}
-+ star: Integer {Range(min = 0, max = 5),NotNull}</panel_attributes>
++ star: Integer {Range(min = 0, max = 5)}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

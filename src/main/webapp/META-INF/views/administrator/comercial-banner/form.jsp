@@ -16,10 +16,13 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="administrator.comercial-banner.form.picture" path="picture"/>
+	<acme:form-url code="administrator.comercial-banner.form.picture" path="picture"/>
 	<acme:form-textarea code="administrator.comercial-banner.form.slogan" path="slogan"/>
-	<acme:form-moment code="administrator.comercial-banner.form.targetUrl" path="targetUrl"/>
-	<acme:form-money code="administrator.comercial-banner.form.creditCard" path="creditCard"/>
+	<acme:form-url code="administrator.comercial-banner.form.targetUrl" path="targetUrl"/>
+	<acme:form-textbox code="administrator.comercial-banner.form.creditCard" path="creditCard"/>
+	<acme:form-textbox code="administrator.comercial-banner.form.monthExp" path="monthExp"/>
+	<acme:form-textbox code="administrator.comercial-banner.form.yearExp" path="yearExp"/>
+	<acme:form-textbox code="administrator.comercial-banner.form.cvv" path="cvv"/>
 	
 	<acme:form-submit test="${command == 'show' }"
 		code="administrator.comercial-banner.form.button.update" 

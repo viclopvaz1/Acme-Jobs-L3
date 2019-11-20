@@ -180,6 +180,9 @@
 		<property name="slogan" value="Siente el sabor" />
 		<property name="targetUrl" value="https://www.cocacola.es/es/home/" />
 		<property name="creditCard" value="4679489831381972" />
+		<property name="monthExp" value="5"/>
+		<property name="yearExp" value="2020"/>
+		<property name="cvv" value="192"/>
 	</bean>
 	
 	<bean id="noncomercialbanner01" class="acme.entities.noncomercialbanners.NonComercialBanner">
