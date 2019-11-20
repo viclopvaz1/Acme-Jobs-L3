@@ -54,7 +54,7 @@ public class Offer extends DomainEntity {
 	private Money				rewardMin;
 
 	@NotBlank
-	@Pattern(regexp = "^\\O[a-zA-Z]{4}\\-[0-9]{5}$")
+	@Pattern(regexp = "^O[a-zA-Z]{4}-[0-9]{5}$")
 	@Column(unique = true)
 	private String				ticker;
 

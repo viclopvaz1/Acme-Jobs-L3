@@ -31,3 +31,6 @@ administrator.challenge.form.error.tooClose = Deadline must be one week after th
 administrator.challenge.form.error.zoneEurG = Only the euro, EUR or € currency is allowed
 administrator.challenge.form.error.zoneEurS = Only the euro, EUR or € currency is allowed
 administrator.challenge.form.error.zoneEurB = Only the euro, EUR or € currency is allowed
+
+administrator.challenge.form.error.goldBsilver = Silver reward must be lower than gold reward
+administrator.challenge.form.error.silverBbronze = Bronze reward must be lower than Silver reward
