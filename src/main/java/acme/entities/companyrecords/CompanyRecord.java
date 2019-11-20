@@ -49,6 +49,7 @@ public class CompanyRecord extends DomainEntity {
 	@Email
 	private String				email;
 
+	@NotNull
 	private boolean				indication;
 
 	@Range(min = 0, max = 5)
